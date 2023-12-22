@@ -1,0 +1,21 @@
+.mesas_map {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 4rem);
+}
+
+.mesas.main_container {
+    display: block;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.mesas_header {
+    display: flex;
+    gap: 2rem;
+}

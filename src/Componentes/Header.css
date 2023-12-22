@@ -1,0 +1,9 @@
+.header {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 4px;
+    border-bottom-color: orange;
+    height: 3rem;
+}

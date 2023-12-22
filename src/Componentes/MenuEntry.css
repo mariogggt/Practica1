@@ -1,0 +1,8 @@
+.menu_entry {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-bottom: solid 1px;
+    border-bottom-color: lightgray;
+}

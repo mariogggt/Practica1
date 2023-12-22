@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, BrowserRouter, Routes} from 'react-router-dom';
+import { Menu } from './Componentes/Menu';
+import { Header } from './Componentes/Header';
+import { Pos } from './Componentes/Pos';
+import { Receipts } from './Componentes/Receipts';
+import { Tables } from './Componentes/Tables';
+import { Inventory } from './Componentes/Inventory';
+
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header></Header>
+        <Menu typeOfUser={'admin'}></Menu>
+        <Routes>
+          <Route path="/" element={<Pos/>}></Route>
+          <Route path="/Ventas" element={<Pos/>}></Route>
+          <Route path="/Recibos" element={<Receipts/>}></Route>
+          <Route path="/Mesas" element={<Tables/>}></Route>
+          <Route path="/Inventario" element={<Inventory/>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

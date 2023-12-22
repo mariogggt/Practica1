@@ -1,0 +1,7 @@
+.inventory.main_container {
+    display: block;
+}
+
+.inventory .table {
+    grid-template-columns: 60% 20% 20%;
+}

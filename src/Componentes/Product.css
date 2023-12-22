@@ -1,0 +1,13 @@
+.product {
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.name {
+    padding-top: 1rem;
+    text-align: center;
+}

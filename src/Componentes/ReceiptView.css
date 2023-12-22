@@ -1,0 +1,15 @@
+.receipt_view {
+    padding: 1rem;
+    border: solid;
+}
+
+.receipt.main_container {
+    gap: 1rem;
+}
+
+.receipt_view_table {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

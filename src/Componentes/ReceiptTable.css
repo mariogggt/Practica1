@@ -1,0 +1,11 @@
+.receipt_table {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: repeat(5, 2rem);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.receipt_table div {
+    padding: 5px;
+}
